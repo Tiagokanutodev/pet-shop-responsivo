@@ -1,0 +1,280 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+    
+
+html
+{
+    overflow-x: hidden;             /*para eliminar a barra de rolagem inferior, tudo que utrpassar o tamanho da tela nao sera visivel */
+}
+
+.container
+{
+    max-width: 1024px;              /*largura maxima*/
+    width: 100%;                    /*ocupara 100% da largura*/
+    margin: 0 auto;                 /*para centralizalo na horizontal*/
+}
+
+header, footer       /*cabecalho*/
+{
+    background-color: #192a56;    /*fundo da palavra EBAC MOTORS*/
+    padding-top: 16px;                /*espaçamento, da cor a cima no (TOP 16) (DONW 0)*/ 
+    color: #fff;                  /*cor daletras (EBAC MOTORS BRANCO)*/
+}
+
+header                               /*PARA O CABEÇALHO ACOMPANHAR A ROLAGEM PARA BAIXO*/
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;                     /*tira o bug do cabeçalho  (teste deletandfo ele)*/
+}
+
+header > .container,
+footer > .container                  /*FILHO DIRETO DO HEADER*/ 
+{    
+    justify-content: space-between;  /*agora jogou os tracinhos pro canto direito*/ 
+    align-items: center;             /*para deixalo alinhado*/
+    padding-bottom: 16px;
+}
+
+nav
+{
+    background-color: #575fcf;   /*fundo do menu NAVEGAÇAO*/
+    padding: 16PX 0;                /*espaçamento, da cor a cima no (TOP 16) (DONW 0)*/ 
+    display: none;
+}
+
+nav li
+{
+    list-style: none;              /*para tirar o pontinho do <li>*/ 
+    display: inline;               /*para colocar os itens de NAVEGAÇAO lado a lado*/
+    margin-right: 16px;            /*espaço entre eles*/
+    font-size: 18px;               /*tamanho das letras da NAVEGAÇAO*/
+    font-weight: bold;             /*EM NEGRITO*/
+    text-transform: uppercase;     /*tudo MAIUSCULO*/
+}
+
+nav li a                           /*seletores de (SOBRE, DETAQUE, PROMOÇOES, CONTATO)*/
+{
+    color: #fff;                 /*COR DAS LETRAS*/
+    text-decoration: none;         /*sem efeitos nas letras*/
+}
+
+.menu-hamburguer
+{
+    width: 35px;                   /*largura*/
+    cursor: pointer;               /*maozinha do mouse*/    
+}
+
+.menu-hamburguer span              /*tres TRACINHOS*/
+{
+    height: 2px;                   /*altura*/
+    width: 80%;                   /*largura*/
+    background-color: #fff;      /*cor dos 3 tracinhos*/
+    display: block;                 
+    margin: 5px;                    /*espaço entre os traçinhos*/    
+}
+
+.container-flex
+{
+    display: flex;                  
+}    
+
+#sobre-a-loja img                   /*seletor de imagem*/
+{
+    max-width: 500px;               /*largura maxima*/   
+    margin-right: 25px;      
+}
+
+section
+{
+    padding: 48px 0;               /*aplica espaço em cima*/
+}
+
+section h2
+{
+    margin-bottom: 16px;           /*margim Sobre a EBAC Motors*/
+}
+
+.lista-veiculos
+{
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li                 /*em destaque*/ 
+{
+    list-style: none;              /*tirar os pontinhos*/
+    max-width: 20%;
+    margin-bottom: 24px; 
+    padding: 10px;
+}
+
+.lista-veiculos li img
+{
+    max-width: 100%;    
+}
+
+.lista-veiculos li h3
+{
+    margin: 16px 0;
+}
+
+
+button
+{
+    display: block;
+    width: 70%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;     /*borda arredondada*/
+}
+
+.price
+{
+    margin: 16px 0;             /*espaço entre o preço e botao verde*/
+    display: block;
+}
+
+.price del
+{
+    color: #ccc;
+    font-size: 14px;
+}
+
+.form-campo
+{
+    margin-bottom: 16px;
+}
+
+.form-campo label
+{
+    font-weight: bold;
+    display: block;              /*deixa um abaixo do outro*/
+}
+
+.form-campo input,
+.form-campo textarea
+{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea
+{
+    resize: none;
+    height: 120px;
+}
+
+form
+{
+    max-width: 360px;
+}
+
+form button
+{
+    max-width: 120px;
+}
+
+footer li
+{
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img
+{
+    height: 32px;
+}
+
+
+@media only screen and (max-width: 620px) 
+{
+    /* para celulares: */
+    .container .container-flex
+    {
+        width: 100%;
+    }
+
+    #sobre-a-loja img                   /*seletor de imagem*/
+    {
+        max-width: 200px;               /*largura maxima*/   
+        margin-right: 25px;      
+    }
+
+    button
+    {
+        display: block;
+        width: 70%;
+        padding: 5px 0;
+        border: none;
+        background-color: #119759;
+        color: #fff;
+        font-size: 11px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        border-radius: 3px;     /*borda arredondada*/
+    }
+}
+
+
+@media only screen and (max-width: 1023px)
+{
+    .container .container-flex
+    {
+        width: 100%;
+    }
+
+    button
+    {
+        display: block;
+        width: 70%;
+        padding: 5px 0;
+        border: none;
+        background-color: #119759;
+        color: #fff;
+        font-size: 11px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        border-radius: 3px;     /*borda arredondada*/
+    }
+} 
+
+
+/* Use a media query para adicionar um ponto de interrupçao em 800px */
+@media screen and (max-width: 800px)
+{
+    .container .container-flex 
+    {
+        width: 100%; /* A largura e 100%, quando a janela de vizualizaçao e 800px ou menor*/
+    }
+
+
+    button
+    {
+        display: block;
+        width: 70%;
+        padding: 5px 0;
+        border: none;
+        background-color: #119759;
+        color: #fff;
+        font-size: 11px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        border-radius: 3px;     /*borda arredondada*/
+    }
+}

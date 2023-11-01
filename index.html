@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Shopp</title>
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="http://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>      <!--obrigatorio -->
+        <div class="container container-flex">
+            <h1>Pets Shopp</h1>  <!--TITULO-->
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>    
+            </div>
+        </div>   
+    </div>
+    <nav>                <!--aponta para outras paginas(NAVEGAÇAO)-->
+        <div class="container">
+            <ul>             <!--lista desordenada-->
+                <li>         <!--lista ordenada-->
+                    <a href="#">Sobre</a>
+                </li>
+                <li>         
+                    <a href="#">Em Destaque</a>
+                </li>
+                <li>         <!--lista ordenada-->
+                    <a href="#">Promoções</a>
+                </li>
+                <li>         <!--lista ordenada-->
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="carousel-imagens">
+        <img src="./imagens/dalmat.jpg" alt="Carro da Porche">
+        <img src="./imagens/pastor-alemao.jpg" alt="Carro da BMW">
+        <img src="./imagens/wasky.jpg" alt="Carro da Ford">
+    </div>
+    <section id="sobre-a-loja">
+        <div class="container container-flex">
+            <img src="./imagens/loja-caes-foto.jpg" alt="imagem da loja EBAC MOTORS">
+            <div>
+                <h2>Sobre a Pets Shopp</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rerum quasi eos non labore vel saepe eveniet ipsa, ducimus iusto, natus quas, nam neque? Ea a facilis quasi consequatur sint!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rerum quasi eos non labore vel saepe eveniet ipsa, ducimus iusto, natus quas, nam neque? Ea a facilis quasi consequatur sint!
+                </p>
+            </div>
+        </div>    
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Em Destaque</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="./imagens/ca1.jpg" alt="Carro BMW">
+                    <h3>Filhote</h3>
+                    <P>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    </P>
+                    <div class="price">
+                        <strong>R$ 40000,00</strong>
+                    </div>
+                    <button type="button">Tenho Interesse</button>
+                </li>                
+                <li>
+                    <img src="./imagens/ca2.jpg" alt="Carro BMW">
+                    <h3>Filhote</h3>
+                    <P>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    </P>
+                    <div class="price">
+                        <strong>R$ 2000,00</strong>
+                    </div>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li>
+                    <img src="./imagens/ca3.jpg" alt="Carro BMW">
+                    <h3>Filhote</h3>
+                    <P>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    </P>
+                    <div class="price">
+                        <strong>R$ 1200,00</strong>
+                    </div>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li>
+                    <img src="./imagens/ca4.jpg" alt="Carro BMW">
+                    <h3>Filhote</h3>
+                    <P>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    </P>
+                    <div class="price">
+                        <strong>R$ 1,00000</strong>
+                    </div>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>    
+
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>            
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>                
+                <div class="form-campo">
+                    <label for="mensagen">Mensagem:</label>
+                    <textarea id="mensagen" name="mensagen"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2022 &copy; EBAC - Todos os direitos reservados
+            </p>            
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>     <!--plugin js 1-->
+    <script src="./js/jquery.validate.min.js"></script> <!--plugim 2-->
+    <script src="./js/messages_pt_PT.min.js"></script>  <!--PARA TRADUZIR EM PORTUGUES O PLUGIM 2-->
+    <script src="./main.js"></script>
+</body>
+</html>
